@@ -4,13 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>listák</title>
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li a{
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
+        </style>
 </head>
 <body>
-    <a href="index.html">FŐOLDALAM
-    </a> |
-    <a href="keplink.html">KÉPLINK</a> |
-    <a href="lista.html">LISTA</a> |
-    <a href="tablazat.html">ÓRAREND</a>
+  <ul>
+    <li><a href="index.html">FŐOLDALAM</a></li>
+    <li><a href="keplink.html">KÉPLINK</a></li>
+    <li><a  class="active"lista.html>LISTA</a></li>
+    <li><a href="tablazat.html">ÓRAREND</a></li>
+    <li><a href="urlap.html">ŰRLAP</a></li>
+  </ul>
 <br>
     <h1 style="color:rgb(4, 94, 4);">Kövér Gábor</h1>
     <br>
