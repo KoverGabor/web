@@ -4,5 +4,6 @@
     width: 200px;
     color: red;
     background-color: lightblue;
-    margin:  5px;
+    margin:  20px;
+    float: left;
 }
