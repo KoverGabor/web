@@ -7,3 +7,9 @@
     margin:  20px;
     float: left;
 }
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #04AA6D;
+    color: white;
+  }
