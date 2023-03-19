@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pitagorasz-tétel és háromszög rajzolása</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Pitagorasz-tétel és háromszög rajzolása</h2>
+
+<label for="a">a oldal hossza:</label>
+<input type="number" id="a" name="a" oninput="drawTriangle()"><br><br>
+
+<label for="b">b oldal hossza:</label>
+<input type="number" id="b" name="b" oninput="drawTriangle()"><br><br>
+
+<div id="triangle"></div>
+
+<br>
+<div id="result"></div>
+
+<script>
+
+function drawTriangle() {
+  let a = Number(document.getElementById("a").value);
+  let b = Number(document.getElementById("b").value);
+  let c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+  
+  let triangle = document.getElementById("triangle");
+  triangle.innerHTML = '<div style="border-top: '+b+'px solid transparent; border-right: '+a+'px solid black; border-bottom: 0px solid transparent; border-left: 0px solid transparent; width: 0px; height: 0px;"></div>';
+  
+  let result = document.getElementById("result");
+  result.innerHTML = "Az eredmény (c oldal hossza): " + c;
+}
+
+</script>
+
+</body>
+</html>
