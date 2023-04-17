@@ -1,0 +1,15 @@
+p{
+    text-align: center;
+}
+footer{
+    background-color: gray;
+    
+
+}
+header{
+    background-color: gray;
+}
+table, th, td {
+    border:1px solid black;
+    text-align: center;
+  }
